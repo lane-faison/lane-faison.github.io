@@ -1,0 +1,57 @@
+.introduction {
+  display: flex;
+  justify-content: center;
+  margin: 100px 50px;
+}
+
+.introduction > p {
+  text-align: justify;
+  max-width: 800px;
+  font-size: 50px;
+}
+
+.introduction > p > .redText {
+  color: #EA4533;
+}
+
+.emphasis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  font-size: 35px;
+}
+
+.emphasis > p {
+  margin: 5px 0;
+}
+
+.careerFocus {
+  display: flex;
+  justify-content: center;
+}
+
+.careerFocus > .careerItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+
+}
+
+.careerFocus > .careerItem > .imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: 50px auto 25px auto;
+}
+
+.careerFocus > .careerItem > .subtitle {
+  font-size: 20px;
+}
