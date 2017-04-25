@@ -1,0 +1,25 @@
+{
+  "name": "github_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lane-faison/lane-faison.github.io.git"
+  },
+  "author": "Christopher Lane Faison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lane-faison/lane-faison.github.io/issues"
+  },
+  "homepage": "https://github.com/lane-faison/lane-faison.github.io#readme",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-ui-router": "1.0.0-beta.3",
+    "bootstrap": "^3.3.7"
+  }
+}
