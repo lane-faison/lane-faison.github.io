@@ -37,6 +37,7 @@
 .careerFocus {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .careerFocus > .careerItem {
@@ -70,6 +71,7 @@
 
 .career {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -78,5 +80,21 @@
   text-align: justify;
   max-width: 800px;
   font-size: 50px;
+  margin-bottom: 0;
   font-family: 'Coming Soon', cursive;
+}
+
+.career > .verticalLine {
+  height: 50px;
+  border-left: 1px solid #ddd;
+  margin: 25px auto;
+  /*position:relative;*/
+  /*text-align:center;*/
+}
+
+.career > .careerEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
