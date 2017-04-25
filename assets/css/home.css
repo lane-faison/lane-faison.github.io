@@ -8,10 +8,17 @@
   text-align: justify;
   max-width: 800px;
   font-size: 50px;
+  /*font-family: 'Gloria Hallelujah', cursive;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-family: 'Architects Daughter', cursive;*/
+  /*font-family: 'Tinos', serif;*/
+  /*font-family: 'Playfair Display SC', serif;*/
+  font-family: 'Coming Soon', cursive;
 }
 
 .introduction > p > .redText {
   color: #EA4533;
+  font-family: 'Coming Soon', cursive;
 }
 
 .emphasis {
@@ -47,11 +54,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin: 50px auto 25px auto;
+}
+
+.careerFocus > .careerItem > .imageWrapper > img {
+  width: 75px;
+  height: 75px;
 }
 
 .careerFocus > .careerItem > .subtitle {
   font-size: 20px;
+}
+
+.career {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career > p {
+  text-align: justify;
+  max-width: 800px;
+  font-size: 50px;
+  font-family: 'Coming Soon', cursive;
 }
