@@ -1,15 +1,18 @@
 <div class="introduction">
+  <img class="col-xs-0 col-md-2" src="/assets/images/clouds.png" alt="clouds">
   <p>Hello, World! My name is <span class="redText">Lane Faison</span>. I am a Full Stack Web Developer and this is my <span class="redText">portfolio</span>.</p>
+  <img class="col-xs-0 col-md-2" src="/assets/images/cloud_sun.png" alt="sun-cloud">
 </div>
-<div class="emphasis">
-  <p>My favorite technologies</p>
+
+<div class="toolHeader">
+  <p class="specialTitle">My toolbelt</p>
 </div>
-<section class="careerFocus">
-  <div class="careerItem col-xs-12 col-s-6 col-md-4">
+<section class="toolbelt">
+  <div class="toolCategory col-xs-12 col-md-4">
     <div class="imageWrapper">
-      <img src="/assets/images/frontend_logo.png" alt="front-end">
+      <img src="/assets/images/brushes.png" alt="front-end">
     </div>
-    <p class="subtitle">...on the Front End</p>
+    <p class="subtitle">Front End</p>
     <ul>
       <li>HTML5</li>
       <li>CSS3</li>
@@ -19,21 +22,21 @@
       <li>Bootstrap</li>
     </ul>
   </div>
-  <div class="careerItem col-xs-12 col-s-6 col-md-4">
+  <div class="toolCategory col-xs-12 col-md-4">
     <div class="imageWrapper">
-      <img src="/assets/images/backend_logo.png" alt="front-end">
+      <img src="/assets/images/gears.png" alt="front-end">
     </div>
-    <p class="subtitle">...on the Back End</p>
+    <p class="subtitle">Back End</p>
     <ul>
       <li>Node.js</li>
       <li>Express</li>
     </ul>
   </div>
-  <div class="careerItem col-xs-12 col-s-6 col-md-4">
+  <div class="toolCategory col-xs-12 col-md-4">
     <div class="imageWrapper">
-      <img src="/assets/images/creative_logo.png" alt="front-end">
+      <img src="/assets/images/production.png" alt="front-end">
     </div>
-    <p class="subtitle">...for Development</p>
+    <p class="subtitle">Management</p>
     <ul>
       <li>GitHub</li>
       <li>git</li>
@@ -43,20 +46,36 @@
       <li>Balsamiq</li>
     </ul>
   </div>
-  <div class="careerItem col-xs-12 col-s-6 col-md-4">
+  <div class="toolCategory col-xs-12 col-md-4">
     <div class="imageWrapper">
-      <img src="/assets/images/creative_logo.png" alt="front-end">
+      <img src="/assets/images/iphone.png" alt="front-end">
     </div>
-    <p class="subtitle">...I'm exploring</p>
+    <p class="subtitle">Mobile</p>
     <ul>
       <li>Swift</li>
-      <li>Angular</li>
-      <li>React</li>
+      <li>Xcode</li>
     </ul>
   </div>
 </section>
+
+<div class="educationHeader">
+  <p class="specialTitle">My education</p>
+</div>
+<section class="education">
+  <div class="educationCategory col-xs-12 col-md-6">
+    <p class="subtitle">galvanize, Inc.</p>
+    <p>Full Stack Web Development Immersive</p>
+    <p>Graduating June 2017</p>
+  </div>
+  <div class="educationCategory col-xs-12 col-md-6">
+    <p class="subtitle">University of Colorado at Boulder</p>
+    <p>B.A. Mathematics</p>
+    <p>Graduated May 2015</p>
+  </div>
+</section>
+
 <section class="career">
-  <p>My career so far</p>
+  <p class="specialTitle">My career</p>
   <span class="verticalLine"></span>
   <div class="careerEvent">
     <p>January 2017 - Present</p>
@@ -81,4 +100,12 @@
     <p>Sergeant</p>
     <p>United States Marine Corps</p>
   </div>
+  <span class="verticalLine"></span>
 </section>
+<footer>
+  <div class="cloud">
+    <img class="col-md-2" src="/assets/images/clouds.png" alt="clouds">
+    <p ui-sref="contact" ng-mouseover="contactHover = !contactHover" ng-mouseleave="contactHover = !contactHover">Contact me</p>
+  </div>
+  <img ng-show="contactHover" class="plane col-md-2" src="/assets/images/airplane.png" alt="sun-cloud">
+</footer>
