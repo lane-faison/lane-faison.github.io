@@ -41,8 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .toolHeader > p {
@@ -61,7 +61,10 @@
   align-items: center;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
 
 }
 
@@ -94,8 +97,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .educationHeader > p {
@@ -115,8 +118,10 @@
   align-items: center;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 50px 0;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .education > .educationCategory > p {
@@ -155,6 +160,19 @@
   align-items: center;
 }
 
+.career > .careerEvent > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.career > .careerEvent > p:nth-child(2) {
+  font-size: 18px;
+}
+
+.career > .careerEvent > p:nth-child(3) {
+  font-size: 16px;
+}
+
 footer {
   height: 300px;
   width: 100%;
@@ -186,8 +204,5 @@ footer > .cloud > p {
 
 footer > .cloud > p:hover {
   cursor: default;
-}
-
-footer > .plane {
-  width: 120px;
+  color: #EA4533;
 }
