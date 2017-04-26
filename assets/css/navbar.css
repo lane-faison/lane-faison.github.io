@@ -1,33 +1,78 @@
-.divNav {
+.largeNav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.mainNav {
-  display: inline-flex;
+.largeList {
+  display: none;
+  align-items: center;
   list-style: none;
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   padding-left: 0;
 }
 
-.mainNav > span {
+@media screen and (min-width: 700px) {
+  .largeList {
+    display: inline-flex;
+  }
+}
+
+.largeList > img {
   margin: 0 50px;
 }
 
-.mainNav > li {
+.largeList > li {
   border-bottom: 2px solid #fff;
   transition: all 0.25s ease-in;
 }
 
-.mainNav > li:hover {
+.largeList > li:hover {
   border-bottom: 2px solid #000;
 }
 
-.mainNav > .firstNavItem {
+.largeList > .firstNavItem {
   margin-right: 50px;
 }
 
-.mainNav > .lastNavItem {
+.largeList > .lastNavItem {
   margin-left: 50px;
+}
+
+.smallNav {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 699px) {
+  .smallNav {
+    display: flex;
+  }
+}
+
+.smallNav > .sun {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+}
+
+.smallNav > .smallList {
+  cursor: default;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px auto;
+}
+
+.smallNav > .smallList > li {
+  margin-bottom: 10px;
+}
+
+.smallNav > .smallList > li:last-child {
+  margin-bottom: 0;
 }

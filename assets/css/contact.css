@@ -1,0 +1,67 @@
+.formSection {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.formSection > .infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+
+.formSection > .infoSection > p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.formSection > .infoSection > .links {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.formSection > .infoSection > .links > a > img {
+  height: 50px;
+  width: 50px;
+  margin-right: 30px;
+}
+
+.formSection > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.formSection > form > input {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.formSection > form > textarea {
+  width: 500px;
+  min-height: 250px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.formSection > form > button {
+  width: 150px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .formSection > form > input, .formSection > form > textarea {
+    width: 300px;
+  }
+}
