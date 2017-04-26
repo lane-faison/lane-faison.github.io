@@ -1,0 +1,12 @@
+<div class="projectHeader">
+  <p class="specialTitle">My projects</p>
+</div>
+<section class="projectSection row">
+  <div ng-repeat="project in $ctrl.projects" class="eachProject col-xs-12 col-sm-6 col-md-3">
+    <div class="imageWrapper">
+      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
+    </div>
+    <p class="subtitle">{{ project.title }}</p>
+    <p>{{ project.description }}</p>
+  </div>
+</section>

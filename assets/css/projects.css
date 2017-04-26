@@ -1,0 +1,53 @@
+.projectHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.projectHeader > p {
+  margin: 5px 0;
+}
+
+.projectSection {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.projectSection > .eachProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 350px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.projectSection > .eachProject > .imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  margin: 50px auto 25px auto;
+}
+
+.projectSection > .eachProject > .imageWrapper > a > img {
+  width: 100px;
+  height: 100px;
+}
+
+.projectSection > .eachProject > .subtitle {
+  font-size: 30px;
+}
+
+.projectSection > .eachProject > p:last-child {
+  text-align: justify;
+}
