@@ -1,6 +1,6 @@
 <div class="introduction">
   <img class="col-xs-0 col-md-2" src="/assets/images/clouds.png" alt="clouds">
-  <p>Hello, World! My name is <span class="redText">Lane Faison</span>. I am a Full Stack Web Developer and this is my <span class="redText">portfolio</span>.</p>
+  <p>Hello, World! My name is <span class="redText">Lane&nbsp;Faison</span>. I am a Full Stack Web Developer and this is my <span class="redText">portfolio</span>.</p>
   <img class="col-xs-0 col-md-2" src="/assets/images/cloud_sun.png" alt="sun-cloud">
 </div>
 
@@ -14,12 +14,7 @@
     </div>
     <p class="subtitle">Front End</p>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>AngularJS</li>
-      <li>Bootstrap</li>
+      <li ng-repeat="skill in $ctrl.skills_FED">{{ skill }}</li>
     </ul>
   </div>
   <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
@@ -28,8 +23,7 @@
     </div>
     <p class="subtitle">Back End</p>
     <ul>
-      <li>Node.js</li>
-      <li>Express</li>
+      <li ng-repeat="skill in $ctrl.skills_BED">{{ skill }}</li>
     </ul>
   </div>
   <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
@@ -38,12 +32,7 @@
     </div>
     <p class="subtitle">Management</p>
     <ul>
-      <li>GitHub</li>
-      <li>git</li>
-      <li>Firebase</li>
-      <li>Heroku</li>
-      <li>Atom</li>
-      <li>Balsamiq</li>
+      <li ng-repeat="skill in $ctrl.skills_Management">{{ skill }}</li>
     </ul>
   </div>
   <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
@@ -52,8 +41,7 @@
     </div>
     <p class="subtitle">Mobile</p>
     <ul>
-      <li>Swift</li>
-      <li>Xcode</li>
+      <li ng-repeat="skill in $ctrl.skills_Mobile">{{ skill }}</li>
     </ul>
   </div>
 </section>
@@ -62,46 +50,27 @@
   <p class="specialTitle">My education</p>
 </div>
 <section class="education row">
-  <div class="educationCategory col-xs-12 col-md-6">
-    <p class="subtitle">Galvanize, Inc.</p>
-    <p>Full Stack Web Development Immersive</p>
-    <p>Graduating June 2017</p>
-  </div>
-  <div class="educationCategory col-xs-12 col-md-6">
-    <p class="subtitle">University of Colorado at Boulder</p>
-    <p>B.A. Mathematics</p>
-    <p>Graduated May 2015</p>
+  <div ng-repeat="school in $ctrl.schools" class="educationCategory col-xs-12 col-md-6">
+    <p class="subtitle">{{ school.school }}</p>
+    <p>{{ school.concentration }}</p>
+    <p>{{ school.date }}</p>
   </div>
 </section>
 
-<section class="career">
+<div class="careerHeader">
   <p class="specialTitle">My career</p>
-  <span class="verticalLine"></span>
-  <div class="careerEvent">
-    <p>Full Stack Web Developer student</p>
-    <p>Galvanize, Inc.</p>
-    <p>January 2017 - Present</p>
+</div>
+<section class="career row">
+  <div ng-repeat="job in $ctrl.jobs" class="eachJob col-md-6">
+    <div class="careerEvent">
+      <p>{{ job.title }}</p>
+      <p>{{ job.company }}</p>
+      <p>{{ job.date }}</p>
+    </div>
+    <span class="verticalLine"></span>
   </div>
-  <span class="verticalLine"></span>
-  <div class="careerEvent">
-    <p>Sr. Technical Recruiter</p>
-    <p>Talent Navigation Experts</p>
-    <p>June 2015 - January 2017</p>
-  </div>
-  <span class="verticalLine"></span>
-  <div class="careerEvent">
-    <p>Ski Instructor</p>
-    <p>Vail Resorts</p>
-    <p>December 2013 - March 2015</p>
-  </div>
-  <span class="verticalLine"></span>
-  <div class="careerEvent">
-    <p>Sergeant</p>
-    <p>United States Marine Corps</p>
-    <p>March 2008 - January 2012</p>
-  </div>
-  <span class="verticalLine"></span>
 </section>
+
 <footer>
   <div class="cloud">
     <img class="col-md-2" src="/assets/images/clouds.png" alt="clouds">

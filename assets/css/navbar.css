@@ -1,3 +1,7 @@
+.active {
+  border-bottom: 2px solid #000;
+}
+
 .largeNav {
   display: flex;
   flex-direction: column;

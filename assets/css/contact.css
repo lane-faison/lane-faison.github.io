@@ -8,18 +8,20 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-right: 50px;
+  padding: 0 50px 0 50px;
   margin-bottom: 50px;
 }
 
 .formSection > .infoSection > p {
-  font-size: 20px;
+  font-family: 'Coming Soon', cursive;
+  font-size: 24px;
   text-align: justify;
 }
 
 .formSection > .infoSection > .links {
   display: flex;
   justify-content: flex-start;
+  align-items: middle;
   margin-top: 50px;
 }
 
@@ -34,10 +36,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 0 50px 0 50px;
 }
 
 .formSection > form > input {
-  width: 500px;
+  width: 450px;
   height: 50px;
   margin-bottom: 30px;
   padding-left: 20px;
@@ -46,7 +49,7 @@
 }
 
 .formSection > form > textarea {
-  width: 500px;
+  width: 450px;
   min-height: 250px;
   margin-bottom: 30px;
   padding-left: 20px;
