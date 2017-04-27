@@ -12,7 +12,7 @@
 
     vm.skills_FED = ["HTML5","CSS3","JavaScript","AngularJS","jQuery","Bootstrap"]
 
-    vm.skills_BED = ["Node.js","Express"]
+    vm.skills_BED = ["Node.js","Knex.js","Express","SQL","PostgreSQL","AJAX","JSON"]
 
     vm.skills_Management = ["GitHub","git","Firebase","Heroku","Atom","Balsamiq","Excel"]
 
