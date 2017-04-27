@@ -7,13 +7,14 @@
       controller: NavbarController
     })
 
-  function NavbarController() {
+  function NavbarController($location) {
     const vm = this
-    vm.getClass = function (path) {
-      return ($location.path().substr(0, path.length) === path) ? 'active' : '';
-    }
 
     vm.$onInit = function () {
+    }
+
+    vm.isActive = function (viewLocation) {
+      return viewLocation === $location.path();
     }
   }
 }())

@@ -1,5 +1,10 @@
-.active {
+.largeNav > .largeList > .active {
   border-bottom: 2px solid #000;
+}
+
+.smallNav > .smallList > .active {
+  font-weight: bold;
+  /*border-bottom: 2px solid #000;*/
 }
 
 .largeNav {

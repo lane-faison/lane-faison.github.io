@@ -1,20 +1,20 @@
 <div class="largeNav">
   <ul class="largeList">
-    <li class="firstNavItem" ui-sref="home">STORY</li>
-    <li ui-sref="projects">PROJECTS</li>
+    <li class="firstNavItem" ui-sref="home" ng-class="{ active: $ctrl.isActive('/')}">STORY</li>
+    <li ui-sref="projects" ng-class="{ active: $ctrl.isActive('/projects')}">PROJECTS</li>
     <img src="/assets/images/mountains.png" alt="">
-    <li ui-sref="resume">RESUME</li>
-    <li class="lastNavItem" ui-sref="contact">CONTACT</li>
+    <li ui-sref="resume" ng-class="{ active: $ctrl.isActive('/resume')}">RESUME</li>
+    <li class="lastNavItem" ui-sref="contact" ng-class="{ active: $ctrl.isActive('/contact')}">CONTACT</li>
   </ul>
 </div>
 
 <div class="smallNav">
   <img class="sun" src="/assets/images/sun.png" alt="">
   <ul class="smallList">
-    <li ui-sref="home">STORY</li>
-    <li ui-sref="projects">PROJECTS</li>
-    <li ui-sref="resume">RESUME</li>
-    <li ui-sref="contact">CONTACT</li>
+    <li ui-sref="home" ng-class="{ active: $ctrl.isActive('/')}">STORY</li>
+    <li ui-sref="projects" ng-class="{ active: $ctrl.isActive('/projects')}">PROJECTS</li>
+    <li ui-sref="resume" ng-class="{ active: $ctrl.isActive('/resume')}">RESUME</li>
+    <li ui-sref="contact" ng-class="{ active: $ctrl.isActive('/contact')}">CONTACT</li>
   </ul>
   <img src="/assets/images/mountains.png" alt="">
 </div>
