@@ -58,7 +58,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 400px;
+  height: 450px;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -106,7 +106,6 @@
 
 .education {
   width: 100%;
-  margin-bottom: 100px;
 }
 
 .education > .educationCategory {
@@ -116,7 +115,6 @@
   align-items: center;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   padding: 50px 0;
   margin-top: -1px;
   margin-left: -1px;
@@ -130,45 +128,58 @@
   font-size: 30px;
 }
 
-.career {
+.careerHeader {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.careerHeader > p {
+  margin: 5px 0;
+}
+
+.career {
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
-.career > p {
-  text-align: justify;
-  max-width: 800px;
-  margin-bottom: 0;
+.career > .eachJob {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.career > .verticalLine {
+.career > .eachJob > .verticalLine {
   height: 50px;
   border-left: 1px solid #ddd;
-  margin: 25px auto;
-  /*position:relative;*/
-  /*text-align:center;*/
+  margin: 10px auto;
 }
 
-.career > .careerEvent {
+.career > .eachJob > .careerEvent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.career > .careerEvent > p:nth-child(1) {
-  font-size: 24px;
+.career > .eachJob > .careerEvent > p:nth-child(1) {
+  font-size: 28px;
 }
 
-.career > .careerEvent > p:nth-child(2) {
+.career > .eachJob > .careerEvent > p:nth-child(2) {
   font-size: 18px;
 }
 
-.career > .careerEvent > p:nth-child(3) {
-  font-size: 16px;
+.career > .eachJob > .careerEvent > p:nth-child(3) {
+  font-size: 18px;
 }
+
 
 footer {
   height: 300px;
@@ -202,4 +213,42 @@ footer > .cloud > p {
 footer > .cloud > p:hover {
   cursor: default;
   color: #EA4533;
+}
+
+@media screen and (max-width: 999px) {
+  .education > .educationCategory:first-child {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .career {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .career {
+    display: block;
+    margin-top: 0;
+  }
+
+  .career > .eachJob {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 50px 0;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+
+  .career > .eachJob > .verticalLine {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
