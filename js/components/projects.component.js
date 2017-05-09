@@ -10,9 +10,11 @@
   function ProjectsController() {
     const vm = this
 
-    vm.projects = [
-      {title: 'RunningSocial', description: 'This iOS application was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map.', image_url:'/assets/images/logos-projects/runningsocial.png', project_url:'#'},
+    vm.mobileProjects = [
+      {title: 'RunningSocial', description: 'This iOS application was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map. My deep passion for mobile development began with this application.', image_url:'/assets/images/logos-projects/runningsocial.png', project_url:'#'}
+    ]
 
+    vm.webProjects = [
       {title: 'Mario Kart Cheats!', description: 'This AngularJS application lets users quickly interact with the various posts on the site. Users can search and filter results as well as vote on a post.', image_url:'/assets/images/logos-projects/mariokart.png', project_url:'https://mario-kart-cheats.herokuapp.com/'},
 
       {title: 'gReads A Lot', description: 'This application allows users to interact with and search a database full of authors and books, as well as create their own authors and books.', image_url:'/assets/images/logos-projects/greads.png', project_url:'https://g-reads-alot.herokuapp.com/index.html'},

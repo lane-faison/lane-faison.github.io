@@ -13,10 +13,9 @@
 
 .projectSection {
   width: 100%;
-  margin-bottom: 100px;
 }
 
-.projectSection > .eachProject {
+.webSection > .eachProject {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,6 +27,48 @@
   margin-top: -1px;
   margin-left: -1px;
   margin-bottom: -1px;
+}
+
+.mobileSection {
+  margin-bottom: 100px;
+}
+
+.mobileSection > .eachProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 200px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 25px;
+}
+
+.appView {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.appView > .appImage {
+  height: 500px;
+}
+
+@media screen and (max-width: 999px) {
+  .appView > .appImage {
+    height: 295px;
+  }
+
+  .mobileSection > .eachProject {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .projectSection > .eachProject > .imageWrapper {
@@ -56,4 +97,8 @@
     .projectHeader {
       background-color: #ddd;
     }
+}
+
+.mobileAppsHeader {
+  margin-top: 0;
 }
