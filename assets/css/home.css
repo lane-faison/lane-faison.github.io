@@ -19,11 +19,6 @@
   text-align: justify;
   max-width: 800px;
   font-size: 50px;
-  /*font-family: 'Gloria Hallelujah', cursive;*/
-  /*font-family: 'Amatic SC', cursive;*/
-  /*font-family: 'Architects Daughter', cursive;*/
-  /*font-family: 'Tinos', serif;*/
-  /*font-family: 'Playfair Display SC', serif;*/
   font-family: 'Coming Soon', cursive;
 }
 
@@ -215,11 +210,21 @@ footer > .cloud > p:hover {
   color: #EA4533;
 }
 
+@media screen and (max-width: 768px) {
+    .toolHeader, .educationHeader, .careerHeader {
+      background-color: #ddd;
+    }
+}
+
 @media screen and (max-width: 999px) {
+  .introduction > p {
+    font-size: 30px;
+  }
+
   .education > .educationCategory:first-child {
     border-bottom: 1px solid #ddd;
   }
-  
+
   .career {
     display: flex;
   }
