@@ -1,6 +1,7 @@
 .formSection {
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .formSection > .infoSection {
@@ -15,7 +16,7 @@
 .formSection > .infoSection > p {
   font-family: 'Coming Soon', cursive;
   font-size: 24px;
-  text-align: justify;
+  text-align: left;
 }
 
 .formSection > .infoSection > .links {

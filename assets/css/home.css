@@ -18,7 +18,7 @@
 .introduction > p {
   text-align: justify;
   max-width: 800px;
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Coming Soon', cursive;
 }
 
@@ -208,6 +208,7 @@ footer > .cloud > p {
 footer > .cloud > p:hover {
   cursor: default;
   color: #EA4533;
+  color: -webkit-linear-gradient(top right, #b51111, #eeeeee);
 }
 
 @media screen and (max-width: 768px) {

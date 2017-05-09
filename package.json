@@ -19,6 +19,7 @@
   "homepage": "https://github.com/lane-faison/lane-faison.github.io#readme",
   "dependencies": {
     "angular": "^1.6.0",
+    "angular-ui-bootstrap": "^2.5.0",
     "angular-ui-router": "1.0.0-beta.3",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.18.5"
