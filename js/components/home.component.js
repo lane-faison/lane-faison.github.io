@@ -16,7 +16,7 @@
 
     vm.skills_Management = ["GitHub","git","Firebase","Heroku","Atom","Balsamiq","Excel"]
 
-    vm.skills_Mobile = ["Swift 3","Xcode","Google Maps SDK","Facebook SDK"]
+    vm.skills_Mobile = ["Swift 3","Xcode","Apple Maps SDK","Facebook SDK"]
 
     vm.jobs = [
       {title: "Full Stack Web Developer student", company: "Galvanize, Inc.", date: "January 2017 - Present"},
