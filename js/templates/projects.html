@@ -1,12 +1,29 @@
+
 <div class="projectHeader">
-  <p class="specialTitle">My projects</p>
+  <p class="specialTitle">Web Apps</p>
 </div>
-<section class="projectSection row">
-  <div ng-repeat="project in $ctrl.projects" class="eachProject col-xs-12 col-sm-6 col-md-3">
+<section class="projectSection row webSection">
+  <div ng-repeat="project in $ctrl.webProjects" class="eachProject col-xs-12 col-sm-6 col-md-3">
     <div class="imageWrapper">
       <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
     </div>
     <p class="subtitle">{{ project.title }}</p>
     <p>{{ project.description }}</p>
+  </div>
+</section>
+
+<div class="projectHeader mobileAppsHeader">
+  <p class="specialTitle">iOS Apps</p>
+</div>
+<section class="projectSection row mobileSection">
+  <div ng-repeat="project in $ctrl.mobileProjects" class="eachProject col-xs-12 col-sm-12 col-md-12" ng-init="parent=$parent">
+    <div class="imageWrapper">
+      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
+    </div>
+    <p class="subtitle">{{ project.title }}</p>
+    <p>{{ project.description }}</p>
+  </div>
+  <div class="appView col-xs-12 col-sm-12 col-md-12" ng-show="$parent.selected == note.id">
+    <img class="appImage" src="/assets/images/logos-projects/RunningSocialApp.jpg" alt="">
   </div>
 </section>
