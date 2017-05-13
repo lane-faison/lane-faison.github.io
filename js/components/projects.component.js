@@ -11,7 +11,7 @@
     const vm = this
 
     vm.mobileProjects = [
-      {title: 'RunningSocial', description: 'This iOS application, which utilizes the Apple Maps SDK, was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map. My deep passion for mobile development began with this application.', image_url:'/assets/images/logos-projects/runningsocial.png', project_url:'#'}
+      {title: 'RunningSocial', description: 'This iOS application, which utilizes the Apple Maps SDK, was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map. My deep passion for mobile development began with this application.', image_url:'/assets/images/logos-projects/runningsocial.png', project_url:'https://github.com/RunningSocial/RunningSocial'}
     ]
 
     vm.webProjects = [
