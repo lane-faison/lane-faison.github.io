@@ -6,3 +6,12 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+.bottom-fade {
+  width: 100%;
+  height: 199px;
+  z-index: 99;
+  position: fixed;
+  bottom: 0px;
+  background: url("/assets/images/bottom-fade.png") bottom center repeat-x;
+}
