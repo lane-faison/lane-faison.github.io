@@ -75,18 +75,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 100px;
+  max-height: 100px;
+  /*width: 100px;*/
   margin: 50px auto 25px auto;
 }
 
 .projectSection > .eachProject > .imageWrapper > a > img {
-  width: 100px;
-  height: 100px;
+  /*width: 100px;*/
+  max-height: 100px;
 }
 
 .projectSection > .eachProject > .subtitle {
   font-size: 30px;
+  text-align: center;
 }
 
 .projectSection > .eachProject > p:last-child {
