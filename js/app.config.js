@@ -28,6 +28,6 @@
         url: '/contact',
         component: 'contact',
       })
-      .otherwise('/')
+    $urlRouterProvider.otherwise('/')
   }
 }())
