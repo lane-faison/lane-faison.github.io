@@ -28,5 +28,6 @@
         url: '/contact',
         component: 'contact',
       })
+      .otherwise('/')
   }
 }())
