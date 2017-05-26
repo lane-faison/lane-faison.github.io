@@ -17,14 +17,11 @@
 </div>
 <section class="projectSection row mobileSection">
   <div ng-repeat="project in $ctrl.mobileProjects" class="eachProject col-xs-12 col-sm-12 col-md-12" ng-init="parent=$parent">
-    <div class="imageWrapper">
-      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
-    </div>
     <p class="subtitle">{{ project.title }}</p>
     <p>{{ project.description }}</p>
-  </div>
-  <div class="appView col-xs-12 col-sm-12 col-md-12" ng-show="$parent.selected == note.id">
-    <img class="appImage" src="/assets/images/logos-projects/RunningSocialApp.jpg" alt="">
+    <div class="iOS-imageWrapper">
+      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
+    </div>
   </div>
 </section>
 

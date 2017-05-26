@@ -11,7 +11,10 @@
     const vm = this
 
     vm.mobileProjects = [
-      {title: 'RunningSocial', description: 'This iOS application, which utilizes the Apple Maps SDK, was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map. My deep passion for mobile development began with this application.', image_url:'/assets/images/logos-projects/runningsocial.png', project_url:'https://github.com/RunningSocial/RunningSocial'}
+      {title: 'Halfway Meetup', description: 'This iOS application was a personal project I decided to do to help facilitate users in finding a place to meetup for drinks, food, or coffee with another person. This app determines the location of both parties and finds meetup spots in the geographic center. The radius within which the results are returned can be expanded to view more possibilities. This application was built with Swift 3, Google Maps SDK, Google Places SDK, Apple\'s Core Location API, and Alamofire.', image_url:'/assets/images/logos-projects/HalfwayMeetupMockup.png', project_url:'https://github.com/lane-faison/Halfway-Meetup'},
+
+      {title: 'RunningSocial', description: 'This iOS application, which utilizes the Apple Maps SDK, was built entirely in Swift 3 for my 3rd quarter group project. This application allows users to login and create their own organized runs that other users are able to see conveniently plotted on a map. My deep passion for mobile development began with this application.', image_url:'/assets/images/logos-projects/RunningSocialMockup.png', project_url:'https://github.com/RunningSocial/RunningSocial'},
+
     ]
 
     vm.webProjects = [
