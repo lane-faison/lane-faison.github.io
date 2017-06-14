@@ -65,6 +65,37 @@
   }
 }
 
+.app-links-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  margin-top: 20px;
+}
+
+.github-mobile-logo {
+  height: 50px;
+  width: : 50px;
+}
+
+.app-store-icon {
+  height: 50px;
+}
+
+.app-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.mobileSection > .eachProject:not(:first-child) > .app-links-div > .link2 {
+  display: none;
+}
+
+.mobileSection > .eachProject:not(:first-child) > .app-links-div > .link3 {
+  display: none;
+}
+
 .projectSection > .eachProject > .imageWrapper {
   display: flex;
   justify-content: center;
@@ -84,7 +115,7 @@
   max-height: 100px;
 }
 
-.projectSection > .eachProject > .iOS-imageWrapper > a > img {
+.projectSection > .eachProject > .iOS-imageWrapper > img {
   max-width: 100%;
   display: block;
   height: auto;

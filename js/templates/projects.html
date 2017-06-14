@@ -5,8 +5,13 @@
   <div ng-repeat="project in $ctrl.mobileProjects" class="eachProject col-xs-12 col-sm-12 col-md-12" ng-init="parent=$parent">
     <p class="subtitle">{{ project.title }}</p>
     <p>{{ project.description }}</p>
+    <div class="app-links-div">
+      <a class="link1" href="{{ project.project_url }}"><img class="github-mobile-logo" src="/assets/images/GitHub-Mark.png" alt="GitHub logo"></a>
+      <a  class="link2" href="{{ project.app_store_url }}"><img class="app-store-icon" src="/assets/images/App_store_icon.png"></a>
+      <a  class="link3" href="{{ project.app_store_url }}"><img class ="app-icon" src="{{ project.app_icon_url }}"></a>
+    </div>
     <div class="iOS-imageWrapper">
-      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
+      <img src="{{ project.image_url }}">
     </div>
   </div>
 </section>
