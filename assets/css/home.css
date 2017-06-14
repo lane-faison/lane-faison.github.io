@@ -7,6 +7,22 @@
 .introduction > img {
   display: none;
   margin: auto 5%;
+  animation: movecloud 20s infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes movecloud {
+    0% {left: 0px;}
+    10% {left: 20px;}
+    20% {left: -10px;}
+    30% {left: 30px;}
+    40% {left: -5px;}
+    50% {left: 25px;}
+    60% {left: -20px;}
+    70% {left: 10px;}
+    80% {left: 0px;}
+    90% {left: 30px;}
+    100% {left: 0px;}
 }
 
 @media screen and (min-width: 1100px) {
@@ -69,11 +85,80 @@
   height: 100px;
   width: 100px;
   margin: 50px auto 25px auto;
+  position: relative;
 }
 
 .toolbelt > .toolCategory > .imageWrapper > img {
   width: 75px;
   height: 75px;
+}
+
+.gear-icon {
+  position: absolute;
+  animation: rotateGear 3s infinite;
+  animation-timing-function: linear;
+}
+
+.gear2-icon {
+  position: absolute;
+  animation: rotateGear2 3s infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotateGear {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes rotateGear2 {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+
+.hammer-icon {
+  animation: swingHammer 3s infinite;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+}
+
+@keyframes swingHammer {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(-90deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.wall-icon {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+.paint-roller-icon {
+  opacity: 1;
+  position: absolute;
+  animation: paint 2s infinite;
+}
+
+@keyframes paint {
+  0% {top: 0px;}
+  25% {top: 80px;}
+  50% {top: 0px;}
+  75% {top: 50px;}
+  100% {top: 0px;}
+}
+
+.phone-icon {
+  animation: vibrate 2s infinite;
+}
+
+@keyframes vibrate {
+  0% {transform: rotate(5deg);}
+  5% {transform: rotate(-5deg);}
+  10% {transform: rotate(6deg);}
+  15% {transform: rotate(-5deg);}
+  20% {transform: rotate(6deg);}
+  25% {transform: rotate(-5deg);}
+  30% {transform: rotate(6deg);}
+  35% {transform: rotate(-8deg);}
+  40% {transform: rotate(0deg);}
 }
 
 .toolbelt > .toolCategory > .subtitle {

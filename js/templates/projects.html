@@ -21,11 +21,14 @@
 </div>
 <section class="projectSection row webSection">
   <div ng-repeat="project in $ctrl.webProjects" class="eachProject col-xs-12 col-sm-6 col-md-4">
-    <div class="imageWrapper">
-      <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a>
-    </div>
-    <p class="subtitle">{{ project.title }}</p>
-    <p>{{ project.description }}</p>
+    <a href="{{ project.project_url }}">
+      <div class="imageWrapper">
+        <img src="{{ project.image_url }}">
+        <!-- <a href="{{ project.project_url }}"><img src="{{ project.image_url }}"></a> -->
+      </div>
+      <p class="subtitle">{{ project.title }}</p>
+      <p>{{ project.description }}</p>
+    </a>
   </div>
 </section>
 

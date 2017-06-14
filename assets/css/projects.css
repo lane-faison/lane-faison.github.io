@@ -96,7 +96,15 @@
   display: none;
 }
 
-.projectSection > .eachProject > .imageWrapper {
+.projectSection > .eachProject > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.webSection > .eachProject:hover {
+  background: rgba(234, 69, 51, 0.05);
+}
+.projectSection > .eachProject > a > .imageWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +119,7 @@
   margin: 50px auto 25px auto;
 }
 
-.projectSection > .eachProject > .imageWrapper > a > img {
+.projectSection > .eachProject > a > .imageWrapper > img {
   max-height: 100px;
 }
 
@@ -121,12 +129,12 @@
   height: auto;
 }
 
-.projectSection > .eachProject > .subtitle {
+.projectSection > .eachProject > a > .subtitle {
   font-size: 30px;
   text-align: center;
 }
 
-.projectSection > .eachProject > p:last-child {
+.projectSection > .eachProject > a > p:last-child {
   text-align: justify;
 }
 
