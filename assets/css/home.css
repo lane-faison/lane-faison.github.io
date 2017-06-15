@@ -48,6 +48,35 @@
   font-size: 35px;
 }
 
+.grass-div {
+  position: relative;
+}
+.grass {
+  height: 20px;
+  width: 100%;
+}
+.lawnmower {
+  position: absolute;
+  height: 100px;
+  top: -81px;
+  animation: mow 15s infinite;
+  animation-timing-function: linear;
+}
+@keyframes mow {
+  0% {left: 0px;}
+  49% {transform: rotateY(0deg);}
+  50% {
+    left: 90%;
+    transform: rotateY(180deg);
+  }
+  99% {transform: rotateY(180deg);}
+  100% {
+    left: 0px;
+    transform: rotateY(0deg);
+  }
+}
+
+
 .toolHeader {
   display: flex;
   justify-content: center;
