@@ -13,15 +13,15 @@
 
 @keyframes movecloud {
     0% {left: 0px;}
-    10% {left: 20px;}
-    20% {left: -10px;}
-    30% {left: 30px;}
-    40% {left: -5px;}
-    50% {left: 25px;}
-    60% {left: -20px;}
-    70% {left: 10px;}
+    10% {left: 10px;}
+    20% {left: -5px;}
+    30% {left: 15px;}
+    40% {left: -3px;}
+    50% {left: 13px;}
+    60% {left: -10px;}
+    70% {left: 5px;}
     80% {left: 0px;}
-    90% {left: 30px;}
+    90% {left: 15px;}
     100% {left: 0px;}
 }
 
@@ -118,12 +118,31 @@
   animation: swingHammer 3s infinite;
   animation-timing-function: linear;
   transform-origin: bottom;
+  position: relative;
+  left: 50px;
+}
+
+.nail-icon {
+  position: relative;
+  left: -54px;
+  z-index: -1;
+  animation: naildown 3s infinite;
+  transform-origin: bottom;
 }
 
 @keyframes swingHammer {
   0% {transform: rotate(0deg);}
-  20% {transform: rotate(-90deg);}
+  10% {transform: rotate(-70deg);}
+  95% {transform: rotate(10deg);}
   100% {transform: rotate(0deg);}
+}
+
+@keyframes naildown {
+  0% {transform: scale(1,1);}
+  8% {transform: scale(1,1);}
+  10% {transform: scale(1,0.2);}
+  80% {transform: scale(1,0.2);}
+  100% {transform: scale(1,1);}
 }
 
 .wall-icon {
@@ -146,7 +165,7 @@
 }
 
 .phone-icon {
-  animation: vibrate 2s infinite;
+  animation: vibrate 1s infinite;
 }
 
 @keyframes vibrate {
