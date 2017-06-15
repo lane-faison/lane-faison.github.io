@@ -64,9 +64,19 @@
 }
 @keyframes mow {
   0% {left: 0px;}
-  49% {transform: rotateY(0deg);}
-  50% {
+  35% {transform: rotateY(0deg);}
+  36% {
     left: 90%;
+    transform: rotateY(180deg);
+  }
+  65% {transform: rotateY(180deg);}
+  66% {
+    left: 0px;
+    transform: rotateY(0deg);
+  }
+  84% {transform: rotateY(0deg);}
+  85% {
+    left: 50%;
     transform: rotateY(180deg);
   }
   99% {transform: rotateY(180deg);}
