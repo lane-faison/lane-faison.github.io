@@ -54,11 +54,12 @@
 .grass {
   height: 20px;
   width: 100%;
+  animation: cut 15s infinite;
 }
 .lawnmower {
   position: absolute;
   height: 100px;
-  top: -81px;
+  top: -86px;
   animation: mow 15s infinite;
   animation-timing-function: linear;
 }
@@ -86,6 +87,11 @@
   }
 }
 
+@keyframes cut {
+  0% {transform: scale(1,1);}
+  98% {transform: scale(1,0.2);}
+  100% {transform: scale(1,1);}
+}
 
 .toolHeader {
   display: flex;
