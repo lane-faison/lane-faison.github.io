@@ -1,7 +1,14 @@
+.top-section {
+  background-image: url("/assets/images/snowymountains-min2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility:
+}
+
 .introduction {
   display: flex;
   justify-content: center;
-  margin: 100px 50px;
+  margin: 50px 50px 300px 50px;
 }
 
 .introduction > img {

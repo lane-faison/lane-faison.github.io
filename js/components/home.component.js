@@ -10,7 +10,7 @@
   function HomeController() {
     const vm = this
 
-    vm.skills_FED = ["HTML5","CSS3","JavaScript","AngularJS","jQuery","Bootstrap"]
+    vm.skills_FED = ["HTML5","CSS3","JavaScript","AngularJS","jQuery","Bootstrap","Adobe Photoshop"]
 
     vm.skills_BED = ["Node.js","Knex.js","Express","SQL","PostgreSQL","AJAX","JSON"]
 
