@@ -64,60 +64,6 @@
   }
 }
 
-.smallNav > .sun-div {
-  display: flex;
-  justify-content: center;
-}
-.smallNav > .sun-div > .sun1 {
-  height: 50px;
-  width: 50px;
-  margin-top: 50px;
-  animation: sunrise1 10s infinite;
-  animation-timing-function: linear;
-  z-index: -1;
-  position: absolute;
-}
-
-.smallNav > .sun-div > .sun2 {
-  height: 50px;
-  width: 50px;
-  margin-top: 50px;
-  animation: sunrise2 10s infinite;
-  animation-timing-function: linear;
-  z-index: -1;
-  position: absolute;
-}
-
-@keyframes sunrise1 {
-  0% {
-    top: 255px;
-    opacity: 0.2;
-  }
-  80% {
-    top: -120px;
-    opacity: 1.0;
-  }
-  100% {
-    top: -120px;
-    opacity: 1.0;
-  }
-}
-
-@keyframes sunrise2 {
-  0% {
-    top: 255px;
-    opacity: 1.0;
-  }
-  80% {
-    top: -120px;
-    opacity: 0.0;
-  }
-  100% {
-    top: -120px;
-    opacity: 0.0;
-  }
-}
-
 .smallNav > .smallList {
   cursor: default;
   list-style: none;

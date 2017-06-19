@@ -1,36 +1,32 @@
 .top-section {
-  background-image: url("/assets/images/snowymountains-min2.png");
+  background-image: url("/assets/images/snowymountains-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility:
+  z-index: 0;
+  position: relative;
 }
 
+.large-sun {
+  height: 120px;
+  width: 120px;
+  z-index: -100;
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  animation: sunrise 60s infinite;
+  animation-timing-function: linear;
+  opacity: 0.7;
+}
+
+@keyframes sunrise {
+  0% {top: 200px;}
+  100% {top: -600px;}
+}
 .introduction {
   display: flex;
   justify-content: center;
   margin: 50px 50px 300px 50px;
-}
-
-.introduction > img {
-  display: none;
-  margin: auto 5%;
-  max-width: 220px;
-  animation: movecloud 20s infinite;
-  transition-timing-function: ease-in-out;
-}
-
-@keyframes movecloud {
-  0% {left: 0px;}
-  10% {left: 10px;}
-  20% {left: -5px;}
-  30% {left: 15px;}
-  40% {left: -3px;}
-  50% {left: 13px;}
-  60% {left: -10px;}
-  70% {left: 5px;}
-  80% {left: 0px;}
-  90% {left: 15px;}
-  100% {left: 0px;}
 }
 
 @media screen and (min-width: 1100px) {
