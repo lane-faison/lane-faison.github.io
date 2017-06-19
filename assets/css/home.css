@@ -55,39 +55,39 @@
 .grass {
   height: 20px;
   width: 100%;
-  animation: cut 15s infinite;
+  animation: cut 45s infinite;
   transform-origin: bottom;
 }
 .lawnmower {
   position: absolute;
   height: 100px;
   top: -86px;
-  animation: mow 15s infinite;
+  animation: mow 45s infinite;
   animation-timing-function: linear;
 }
 @keyframes mow {
   0% {
     top: -90px;
-    left: 0px;
+    left: -15%;
   }
-  35% {transform: rotateY(0deg);}
-  36% {
-    left: 90%;
+  24% {transform: rotateY(0deg);}
+  25% {
+    left: 115%;
     transform: rotateY(180deg);
   }
-  65% {transform: rotateY(180deg);}
-  66% {
-    left: 100px;
+  49% {transform: rotateY(180deg);}
+  50% {
+    left: -15%;
     transform: rotateY(0deg);
   }
-  84% {transform: rotateY(0deg);}
-  85% {
-    left: 50%;
+  74% {transform: rotateY(0deg);}
+  75% {
+    left: 115%;
     transform: rotateY(180deg);
   }
   99% {transform: rotateY(180deg);}
   100% {
-    left: 0px;
+    left: -15%;
     top: -78px;
     transform: rotateY(0deg);
   }
