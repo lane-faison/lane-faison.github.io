@@ -26,7 +26,7 @@
     ]
 
     vm.schools = [
-      {school: "Galvanize, Inc.", concentration: "Full Stack Web Development Immersive", date: "Graduating June 2017"},
+      {school: "Galvanize, Inc.", concentration: "Full Stack Web Development Immersive", date: "Graduated June 2017"},
       {school: "University of Colorado at Boulder", concentration: "B.A. Mathematics", date: "Graduated May 2015"}
     ]
 
