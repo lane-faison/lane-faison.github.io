@@ -1,7 +1,7 @@
 <section class="top-section">
   <img class="large-sun" src="/assets/images/large-sun.png" alt="sun">
   <div class="introduction">
-    <p>My name is <span class="redText">Lane&nbsp;Faison</span>. I am a Full Stack Web & iOS&nbsp;Developer and this is my portfolio.</p>
+    <p>My name is <span class="redText">Lane&nbsp;Faison</span>. I am a Full Stack Web & iOS&nbsp;Engineer and this is my portfolio.</p>
   </div>
   <div class="grass-div">
     <img class="lawnmower" src="/assets/images/lawnmower.png" alt="grass">
@@ -14,6 +14,15 @@
   <p class="specialTitle">My toolbelt</p>
 </div>
 <section class="toolbelt row">
+  <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
+    <div class="imageWrapper">
+      <img class="phone-icon" src="/assets/images/iphone.png" alt="front-end">
+    </div>
+    <p class="subtitle">iOS</p>
+    <ul>
+      <li ng-repeat="skill in $ctrl.skills_Mobile">{{ skill }}</li>
+    </ul>
+  </div>
   <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
     <div class="imageWrapper">
       <img class="wall-icon" src="/assets/images/wall.png" alt="front-end">
@@ -42,15 +51,6 @@
     <p class="subtitle">Management</p>
     <ul>
       <li ng-repeat="skill in $ctrl.skills_Management">{{ skill }}</li>
-    </ul>
-  </div>
-  <div class="toolCategory col-xs-12 col-sm-6 col-md-3">
-    <div class="imageWrapper">
-      <img class="phone-icon" src="/assets/images/iphone.png" alt="front-end">
-    </div>
-    <p class="subtitle">iOS</p>
-    <ul>
-      <li ng-repeat="skill in $ctrl.skills_Mobile">{{ skill }}</li>
     </ul>
   </div>
 </section>
